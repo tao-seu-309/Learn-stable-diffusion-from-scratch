@@ -20,7 +20,7 @@
 
 * VAE from scratch
 * Diffusion from scratch
-* Stable Diffusion from scrach
+* Stable Diffusion from scratch
 
 
 ### 5. Lora and ControlNet
