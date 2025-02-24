@@ -8,26 +8,26 @@
 - **企业级实践**：包含LoRA微调、ControlNet控制生成等生产级技术
 - **理论+实践闭环**：每个模块配套论文精读、代码实现、实验分析
 
-## 🚀 目录
+## 目录
 
-&nbsp;&nbsp;&nbsp;&nbsp; 1. SRGAN
+### 1. SRGAN
 
-&nbsp;&nbsp;&nbsp;&nbsp; 2. AutoEncoder
+### 2. AutoEncoder
 
-&nbsp;&nbsp;&nbsp;&nbsp; 3. Vae
+### 3. Vae
 
-&nbsp;&nbsp;&nbsp;&nbsp; 4. Diffusion from scratch
+### 4. Diffusion from scratch
 
 * VAE from scratch
 * Diffusion from scratch
 * Stable Diffusion from scrach
 
 
-&nbsp;&nbsp;&nbsp;&nbsp; 5. Lora and ControlNet
+### 5. Lora and ControlNet
 
-&nbsp;&nbsp;&nbsp;&nbsp; 6. Attention
+### 6. Attention
 
-&nbsp;&nbsp;&nbsp;&nbsp; 7. Comfyui Api Test
+### 7. Comfyui Api Test
 
 
 ### 🌟 未来计划
