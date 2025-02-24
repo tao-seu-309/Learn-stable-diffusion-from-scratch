@@ -1,0 +1,175 @@
+{
+    "3": {
+      "inputs": {
+        "seed": 1118793054007208,
+        "steps": 15,
+        "cfg": 20,
+        "sampler_name": "dpmpp_2m",
+        "scheduler": "karras",
+        "denoise": 0.5,
+        "model": [
+          "4",
+          0
+        ],
+        "positive": [
+          "6",
+          0
+        ],
+        "negative": [
+          "7",
+          0
+        ],
+        "latent_image": [
+          "26",
+          0
+        ]
+      },
+      "class_type": "KSampler",
+      "_meta": {
+        "title": "K采样器"
+      }
+    },
+    "4": {
+      "inputs": {
+        "ckpt_name": "sd_xl_base_1.0.safetensors"
+      },
+      "class_type": "CheckpointLoaderSimple",
+      "_meta": {
+        "title": "Checkpoint加载器（简易）"
+      }
+    },
+    "6": {
+      "inputs": {
+        "text": "big fire emanating from cracks,emitting slight smoke,spreading.",
+        "clip": [
+          "4",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "CLIP文本编码"
+      }
+    },
+    "7": {
+      "inputs": {
+        "text": "blurry, low resolution, distorted features, unnatural colors, harsh shadows, overexposed, cluttered background, awkward pose, unrealistic proportions, noise, grainy texture, cartoon\n",
+        "clip": [
+          "4",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "CLIP文本编码"
+      }
+    },
+    "8": {
+      "inputs": {
+        "samples": [
+          "3",
+          0
+        ],
+        "vae": [
+          "4",
+          2
+        ]
+      },
+      "class_type": "VAEDecode",
+      "_meta": {
+        "title": "VAE解码"
+      }
+    },
+    "23": {
+      "inputs": {
+        "image": "clipspace/clipspace-mask-2494524.2999999523.png [input]",
+        "upload": "image"
+      },
+      "class_type": "LoadImage",
+      "_meta": {
+        "title": "加载图像"
+      }
+    },
+    "26": {
+      "inputs": {
+        "samples": [
+          "27",
+          0
+        ],
+        "mask": [
+          "28",
+          0
+        ]
+      },
+      "class_type": "SetLatentNoiseMask",
+      "_meta": {
+        "title": "设置Latent噪波遮罩"
+      }
+    },
+    "27": {
+      "inputs": {
+        "pixels": [
+          "23",
+          0
+        ],
+        "vae": [
+          "4",
+          2
+        ]
+      },
+      "class_type": "VAEEncode",
+      "_meta": {
+        "title": "VAE编码"
+      }
+    },
+    "28": {
+      "inputs": {
+        "expand": 20,
+        "tapered_corners": true,
+        "mask": [
+          "31",
+          0
+        ]
+      },
+      "class_type": "GrowMask",
+      "_meta": {
+        "title": "扩展遮罩"
+      }
+    },
+    "31": {
+      "inputs": {
+        "channel": "green",
+        "image": [
+          "32",
+          0
+        ]
+      },
+      "class_type": "ImageToMask",
+      "_meta": {
+        "title": "图像转换为遮罩"
+      }
+    },
+    "32": {
+      "inputs": {
+        "image": "ComfyUI_temp_ouzhe_00003_.png",
+        "upload": "image"
+      },
+      "class_type": "LoadImage",
+      "_meta": {
+        "title": "加载图像"
+      }
+    },
+    "33": {
+      "inputs": {
+        "filename_prefix": "ComfyUI",
+        "images": [
+          "8",
+          0
+        ]
+      },
+      "class_type": "SaveImage",
+      "_meta": {
+        "title": "保存图像"
+      }
+    }
+  }

@@ -1,0 +1,45 @@
+# 基础排除项
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+*.swp
+*.bak
+*~
+
+# IDE相关
+.vscode/
+.idea/
+.DS_Store
+
+# 虚拟环境
+venv/
+env/
+
+# 日志与临时文件
+*.log
+*.tmp
+*.temp
+
+# 数据文件（全部排除）
+data/
+datasets/
+samples/
+outputs/
+*.arrow
+*.png
+*.jpg
+
+# 模型文件扩展名（排除所有格式）
+*.ckpt
+*.safetensors
+*.bin
+*.pth
+*.h5
+*.pt
+
+
+# 大文件排除（通过git属性配置）
+*.* !*.*
