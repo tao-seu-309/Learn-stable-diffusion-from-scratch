@@ -1,4 +1,4 @@
-# Stable Diffusion 全栈研习计划 🚀
+# Stable Diffusion From Scratch 🚀
 
 从底层原理到工程实践，系统构建AIGC知识体系。本项目包含经典论文复现、核心模块手写实现、企业级应用开发全链路实践。
 
